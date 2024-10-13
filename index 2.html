@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Weltkarte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interaktive Weltkarte</h1>
+    </header>
+
+    <main>
+        <div id="map-container">
+            <h2>Wähle einen Kontinent oder Ozean</h2>
+            <div id="continents">
+                <button onclick="showEurope()">Europa</button>
+                <!-- Weitere Kontinente können hier hinzugefügt werden -->
+            </div>
+
+            <div id="country-container" style="display:none;">
+                <h2>Wähle ein Land</h2>
+                <div id="countries"></div>
+            </div>
+
+            <div id="country-details" style="display:none;">
+                <h2 id="country-name"></h2>
+                <button onclick="showVideo()">Video ansehen</button>
+                <button onclick="showExercise()">Übung machen</button>
+                <button onclick="showCities()">Städte ansehen</button>
+                <div id="exercise-container" style="display:none;"></div>
+            </div>
+
+            <div id="search-container">
+                <input type="text" id="search" placeholder="Stadt suchen...">
+                <button onclick="searchCity()">Suchen</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dir fehlt etwas? Melde dich unter: <a href="mailto:learnwithme.2106@gmail.com">learnwithme.2106@gmail.com</a></p>
+        <p>Folge uns auch gerne auf Instagram und YouTube (@learnwithme-2106)!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
